@@ -48,3 +48,6 @@ suites:
 - name: default
   run_list:
   - recipe[httpd-tdcd::default]
+  verifier:
+    inspec_tests:
+      - test/smoke/default
