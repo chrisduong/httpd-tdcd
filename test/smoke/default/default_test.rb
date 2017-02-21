@@ -6,7 +6,7 @@
 # found at http://inspec.io/docs/reference/resources/
 
 describe port(80) do
-  it { should_not be_listening }
+  it { should be_listening }
 end
 
 describe command('curl http://localhost') do
