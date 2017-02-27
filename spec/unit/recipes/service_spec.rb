@@ -17,5 +17,9 @@ describe 'httpd-tdcd::service' do
       expect(chef_run).to start_service('httpd')
     end
 
+    it 'enables the necessary service' do
+      expect(chef_run).to enable_service('httpd')
+    end
+
   end
 end
